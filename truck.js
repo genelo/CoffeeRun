@@ -14,6 +14,7 @@
         console.log('delivering order for ' + customerId);
         this.db.remove(customerId);
     };
+    //added an array in the foreach function to return for testing
     Truck.prototype.printOrders = function() {
         var customerIdArray = Object.keys(this.db.getAll());
         var temp = [];
